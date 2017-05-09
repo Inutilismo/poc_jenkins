@@ -21,7 +21,7 @@
     </target>
 
     <target name="phpunit" description="Run unit tests using PHPUnit and generates reports">
-        <exec executable="phpunit" dir="${basedir}/tests" failonerror="true" />
+        <exec executable="${toolsdir}phpunit${script-suffix}" dir="${basedir}/tests" failonerror="true" />
     </target>
 
     <target name="compress" description="Gera um arquivo zipado com o nome do projeto dentro de build">
