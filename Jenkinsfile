@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                fileExists 'kkk'
                 sh 'php --version'
             }
         }
